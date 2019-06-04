@@ -176,7 +176,7 @@ public void playerRedStrategy(){
         {
             for(int c=0; c<grid[0].length-4; c++)
             {
-                if(map[r][c]==0 && r==5)
+                if(map[r][c]==0 && map[r][c+4]==0 && r==5)
                 {
                     int post = map[r][c+1] + map[r][c+2] + map[r][c+3];
                     if(post==2 || post==-2)
@@ -192,7 +192,7 @@ public void playerRedStrategy(){
                     
                 }
                 
-                if(map[r][c]==0 && r!=5)
+                if(map[r][c]==0 && map[r][c+4]==0 && r!=5)
                 {
                     int post = map[r][c+1] + map[r][c+2] + map[r][c+3];
                     if(post==2 || post==-2)
